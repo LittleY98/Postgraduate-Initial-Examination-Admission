@@ -1,0 +1,325 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\研究生初试录取系统.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\研究生初试录取系统.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MY_DIALOG DIALOGEX 0, 0, 466, 307
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "研究生初试录取系统"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "信息录入",IDC_BUTTON2,40,90,120,40
+    PUSHBUTTON      "录取结果",IDC_BUTTON3,280,90,120,40
+    PUSHBUTTON      "退出程序",IDC_BUTTON4,280,222,120,40
+    PUSHBUTTON      "用户管理",IDC_BUTTON1,40,222,120,40
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 257, 178
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "登录"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,34,108,53,14,0,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "取消",IDCANCEL,110,108,54,14,0,WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    CTEXT           "用户名",IDC_STATIC,34,18,53,22,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,110,17,54,23,ES_AUTOHSCROLL,WS_EX_STATICEDGE
+    CTEXT           "密码",IDC_STATIC,34,50,53,22,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT2,110,48,54,22,ES_PASSWORD | ES_AUTOHSCROLL,
+                    WS_EX_STATICEDGE
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 539, 250
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "信息录入"
+FONT 10, "System"
+BEGIN
+    CTEXT           "考号",IDC_STATIC,7,16,44,21,SS_CENTERIMAGE
+    CTEXT           "姓名",IDC_STATIC,76,16,44,19,SS_CENTERIMAGE
+    CTEXT           "专业",IDC_STATIC,145,16,44,19,SS_CENTERIMAGE
+    CTEXT           "数学",IDC_STATIC,215,18,44,19,SS_CENTERIMAGE
+    CTEXT           "政治",IDC_STATIC,286,18,44,19,SS_CENTERIMAGE
+    CTEXT           "英语",IDC_STATIC,355,16,44,19,SS_CENTERIMAGE
+    CTEXT           "专业课",IDC_STATIC,426,16,44,21,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,7,37,44,21,ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME | 
+                    WS_EX_RTLREADING | WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_EDIT2,76,37,44,21,ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT3,145,37,44,21,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT4,215,37,44,21,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT5,286,37,44,21,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT6,355,37,44,21,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDIT7,426,37,44,21,ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,67,463,119
+    PUSHBUTTON      "添加",IDC_BUTTON1,76,212,44,14
+    PUSHBUTTON      "修改",IDC_BUTTON5,145,213,44,14
+    PUSHBUTTON      "删除",IDC_BUTTON6,215,213,44,14
+    PUSHBUTTON      "计算",IDC_BUTTON7,286,213,44,14
+    PUSHBUTTON      "保存",IDC_BUTTON8,355,212,44,14
+    PUSHBUTTON      "文件导入",IDC_BUTTON9,426,213,44,14
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 451, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "录取结果"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,362,170
+    PUSHBUTTON      "打开文件",IDC_BUTTON1,381,92,50,14
+    PUSHBUTTON      "显示录取结果",IDC_BUTTON2,381,70,50,14
+    EDITTEXT        IDC_EDIT1,387,43,34,12,ES_AUTOHSCROLL
+    CTEXT           "设置分数线",IDC_STATIC,384,18,42,17,SS_CENTERIMAGE
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 185, 152
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    LTEXT           "账户",IDC_STATIC,32,17,17,8
+    EDITTEXT        IDC_EDIT1,58,14,40,14,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,108,17,17,8
+    EDITTEXT        IDC_EDIT2,132,14,40,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,22,31,150,66
+    PUSHBUTTON      "增加",IDC_BUTTON1,14,108,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON2,68,108,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON3,122,108,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON4,66,127,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "研究生初试录取系统 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "研究生初试录取系统\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2018\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "研究生初试录取系统.EXE\0"
+            VALUE "ProductName", "研究生初试录取系统 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 461
+        VERTGUIDE, 40
+        VERTGUIDE, 160
+        VERTGUIDE, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 300
+        HORZGUIDE, 90
+        HORZGUIDE, 130
+        HORZGUIDE, 222
+        HORZGUIDE, 262
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        VERTGUIDE, 34
+        VERTGUIDE, 87
+        VERTGUIDE, 110
+        VERTGUIDE, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+        HORZGUIDE, 17
+        HORZGUIDE, 40
+        HORZGUIDE, 48
+        HORZGUIDE, 72
+        HORZGUIDE, 108
+        HORZGUIDE, 122
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 532
+        VERTGUIDE, 7
+        VERTGUIDE, 51
+        VERTGUIDE, 76
+        VERTGUIDE, 120
+        VERTGUIDE, 145
+        VERTGUIDE, 189
+        VERTGUIDE, 215
+        VERTGUIDE, 259
+        VERTGUIDE, 286
+        VERTGUIDE, 330
+        VERTGUIDE, 355
+        VERTGUIDE, 399
+        VERTGUIDE, 426
+        VERTGUIDE, 470
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+        HORZGUIDE, 16
+        HORZGUIDE, 37
+        HORZGUIDE, 58
+        HORZGUIDE, 212
+        HORZGUIDE, 227
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 444
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\研究生初试录取系统.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
